@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume of Nikhil Mandhyani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #333;
+      --accent: #0055ff;
+      --card-bg: #fff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    .introduction-name {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    .name {
+      font-size: 45px;
+      color: #002f6c;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    .designation,
+    .information {
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    .information a {
+      color: #002f6c;
+      text-decoration: none;
+    }
+
+    .navigation {
+      display: flex;
+      position: sticky;
+      top: 0;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #0047ab;
+    }
+
+    .redirector {
+      color: white;
+      padding: 10px 16px;
+      background-color: #0047ab;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .redirector:hover {
+      background-color: #002f6c;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      color: #002f6c;
+    }
+
+    .navigation-wrapper {
+      position: sticky;
+      top: 0;
+      background-color: #0047ab;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-content {
+      margin: 0px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-info {
+      display: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 10px;
+      transition: all 0.5s ease;
+    }
+
+    .navigation-wrapper.sticky .nav-content {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .navigation-wrapper.sticky .nav-info {
+      width: auto;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .redirector {
+      color: white;
+      padding: 8px 14px;
+      background-color: #0047ab;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .redirector:hover {
+      background-color: #002f6c;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navigation-wrapper.sticky .nav-content {
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .navigation-wrapper.sticky .nav-info {
+        text-align: center;
+      }
+
+      .navigation {
+        justify-content: center;
+        gap: 4px;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .certificate-image{
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="introduction-name">
+    <div class="name">Nikhil R Mandhyani</div>
+    <div class="designation">Software Developer</div>
+    <div class="information">
+      <a href="mailto:nikhilmandhyani1@gmail.comm" target="_blank">nikhilmandhyani1@gmail.com</a> |
+      <a href="https://linkedin.com/in/nikhil-mandhyani" target="_blank">linkedin.com/in/nikhil-mandhyani</a>
+    </div>
+  </div>
+
+  <div class="navigation-wrapper" id="navbar">
+    <div class="nav-content">
+      <div class="nav-left">
+        <div class="nav-info" id="navInfo">
+          Nikhil R Mandhyani – Software Developer
+        </div>
+      </div>
+      <div class="nav-right">
+        <nav class="navigation">
+          <a class="redirector" href="#about">About Me</a>
+          <a class="redirector" href="#experience">Work Experience</a>
+          <a class="redirector" href="#projects">Projects</a>
+          <a class="redirector" href="#skills">Key Skills</a>
+          <a class="redirector" href="Nikhil Mandhyani - Software Developer Resume.pdf" download>Download Resume</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section id="about">
+    <h2 class="section">Summary</h2>
+    <p>Results-driven Software Developer with 2 years of experience in designing and developing scalable solutions.
+      Proficient in Python, Java, with expertise in backend logic optimization, API integration, and frontend
+      development. Adapt at troubleshooting, performance enhancement, and delivering user-centric software solutions.
+      Passionate about continuous learning and leveraging technology to drive efficiency and innovation.</p>
+  </section>
+
+  <section id="experience">
+    <h2 class="section">Work Experience</h2>
+    <p style="margin-bottom: 2px;"><strong>Software Development Engineer</strong> — NuageCX Consulting Pvt Ltd <span
+        style="float: right;">May 2023 – Present</span></p>
+    <p>Developed and maintained customized software solutions for clients using Zoho ecosystem. Collaborated in the
+      implementation and development of software’s optimized backend logic using JS/python scripts to enhance system
+      performance. Troubleshot and resolved application issues, ensuring seamless user experiences.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section">Projects</h2>
+    <h4 class="section">
+      1. Analytics Reporting:
+    </h4>
+    <ul>
+      <li>Designed and built interactive dashboards in Analytics to visualize KPIs across IT Asset, Logistics, and
+        Manufacturing operations.</li>
+      <li>Cleaned, transformed, and analyzed data from Zoho tools and other sources to uncover operational insights.
+      </li>
+      <li>Developed custom metrics and formulas for detailed reporting on asset utilization, order trends, and
+        production efficiency.</li>
+      <li>Implemented user-level filters and scheduled exports for cross-functional stakeholders to support real-time
+        decision-making.</li>
+      <li>Conducted root cause analysis and trend identification using historical datasets to aid process optimization.
+      </li>
+      <li>Collaborated with technical and business teams to define report requirements and KPIs.</li>
+    </ul>
+    <br>
+    <h4 class="section">
+      2. IT Asset Management Application:
+    </h4>
+    <ul>
+      <li>Developed backend functionalities using scripting and integrated them with frontend components.</li>
+      <li>Implemented asset transfer and M2M transfer functionalities, ensuring accurate updates for associated
+        sub-assets.</li>
+    </ul>
+    <br>
+    <h4 class="section">
+      3. Manufacturing Management Application:
+    </h4>
+    <ul>
+      <li>Designed and developed features to manage production schedules, inventory tracking, and resource allocation.
+      </li>
+      <li>Enabled efficient order processing and resource optimization to streamline manufacturing operations.</li>
+    </ul>
+
+  </section>
+
+  <section >
+    <h2 class="section">Projects</h2>
+     
+  <h4 class="section">
+      1. AI Project Tracker Dashboard
+    </h4>
+  <p>A Kanban and List view dashboard to track machine learning project stages and task statuses dynamically using pure JS, HTML, and CSS.</p>
+  <a href="http://127.0.0.1:5501/kanban.html" target="_blank">View Project</a>
+  </section>
+
+  <section id="skills">
+    <h2 class="section">Key Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, Java, Web-Tech, SQL</li>
+      <li><strong>API Integration:</strong> RESTful APIs, Postman</li>
+      <li><strong>Database:</strong> MySQL, MS SQL</li>
+      <li><strong>Other Skills:</strong> OOP, Requirement Analysis</li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2 class="section">Certificates</h2>
+
+    <div class="certificates-container">
+      <div class="certificate-image" id="java-cert"><strong>Full Stack Java
+          Development</strong> – Qspiders, Pune <span style="float: right;">Apr 2023</span></div>
+      <div class="certificate-image" id="python-cert"> <strong>Full Python Mastery
+          1.0 Basic to Advance</strong> – Codewithrandom.dev</div>
+    </div>
+  </section>
+
+   <section id="education">
+    <h2 class="section">Education</h2>
+    <p><strong>B.E. Mechanical Engineering</strong> — RTM Nagpur University (CGPA: 9.56) <span
+        style="float: right;">2019 - 2022</span></p>
+    <p><strong>Diploma in Mechanical Engineering</strong> — MSBTE (78%) <span style="float: right;">2016 - 2019</span>
+    </p>
+  </section>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const intro = document.querySelector('.introduction-name');
+    const navInfo = document.getElementById('navInfo');
+
+    window.addEventListener('scroll', () => {
+      const offset = intro.offsetHeight;
+      if (window.scrollY >= offset) {
+        navInfo.style.display = 'block';
+        navbar.classList.add('sticky');
+      } else {
+        navInfo.style.display = 'none';
+        navbar.classList.remove('sticky');
+      }
+    });
+
+    document.querySelectorAll('.cert-hover').forEach(span => {
+      const targetId = span.getAttribute('data-target');
+      const imageDiv = document.getElementById(targetId);
+
+      span.addEventListener("mouseenter", () => {
+        imageDiv.style.display = "block";
+        span.style.textDecoration = "underline";
+      });
+
+      span.addEventListener("mouseleave", () => {
+        imageDiv.style.display = "none";
+        span.style.textDecoration = "none";
+      });
+    });
+
+
+    document.querySelectorAll('.certificate-image').forEach(image => {
+      image.addEventListener('click', () => {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = 0;
+        modal.style.left = 0;
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.background = 'rgba(0,0,0,0.8)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = 9999;
+        const img = document.createElement('img');
+        img.src = image.style.backgroundImage.slice(5, -2);
+        console.log(image.id);
+        if (image.id === "java-cert") {
+          img.src = "./java-full-stack.jpg";
+        } else if (image.id === "python-cert") {
+          img.src = "./python-mastery.png";
+        } 
+
+        img.style.maxWidth = '80%';
+        img.style.maxHeight = '80%';
+        modal.appendChild(img);
+        modal.addEventListener('click', () => modal.remove());
+        document.body.appendChild(modal);
+      });
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>
