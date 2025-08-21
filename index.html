@@ -335,6 +335,7 @@
           Development</strong> – Qspiders, Pune <span style="float: right;">Apr 2023</span></div>
       <div class="certificate-image" id="python-cert"> <strong>Full Python Mastery
           1.0 Basic to Advance</strong> – Codewithrandom.dev</div>
+      <div class="certificate-image" id="react-cert"> <strong>React JS Mastery</strong> – Udemy <span style="float: right;">Aug 2025</span></div>
     </div>
   </section>
 
@@ -393,12 +394,14 @@
         modal.style.zIndex = 9999;
         const img = document.createElement('img');
         img.src = image.style.backgroundImage.slice(5, -2);
-        console.log(image.id);
+        
         if (image.id === "java-cert") {
           img.src = "./java-full-stack.jpg";
         } else if (image.id === "python-cert") {
           img.src = "./python-mastery.png";
-        } 
+        } else if(image.id === "react-cert") {
+          img.src = "./UC-f4ce2814-363f-4cb9-8663-f85e1ab8e702.jpg";
+        }
 
         img.style.maxWidth = '80%';
         img.style.maxHeight = '80%';
@@ -415,3 +418,4 @@
 </body>
 
 </html>
+
